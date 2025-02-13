@@ -4,7 +4,7 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #dbdbdb;
+    background-color: #dbdbdb; /* Light mode background */
     color: #2c3e50;
     margin: 0;
     padding: 0;
@@ -12,10 +12,10 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode Styles */
+/* Dark Mode Styles for Body */
 #dark-mode-toggle:checked ~ body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
 }
 
 /* Glowing Container */
@@ -23,7 +23,7 @@ body {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
-    background: #ffffff;
+    background: #ffffff; /* Light mode background for container */
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     animation: fade-in 1s ease-in-out;
@@ -32,9 +32,11 @@ body {
 
 /* Dark Mode for Glow Container */
 #dark-mode-toggle:checked ~ .glow-container {
-    background-color: #333;
+    background-color: #333; /* Dark mode background for container */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
+
+/* Rest of your CSS continues... */
 
 /* Header */
 header {
