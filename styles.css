@@ -1,42 +1,26 @@
 /* Import Modern Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* General Styles */
+/* Default Light Mode Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #dbdbdb; /* Light mode background */
-    color: #2c3e50;
+    color: #000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode Styles for Body */
+/* Dark Mode Styles when Checkbox is Checked */
 #dark-mode-toggle:checked ~ body {
-    background-color: #121212; /* Dark mode background */
-    color: #ffffff; /* Dark mode text color */
+    background-color: #121212;
+    color: #fff;
 }
 
-/* Glowing Container */
-.glow-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff; /* Light mode background for container */
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    animation: fade-in 1s ease-in-out;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-/* Dark Mode for Glow Container */
+/* Dark Mode Styles Directly on Body when Checkbox is Checked */
 #dark-mode-toggle:checked ~ .glow-container {
-    background-color: #333; /* Dark mode background for container */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #121212; /* Ensure the container is dark */
 }
 
-/* Rest of your CSS continues... */
 
 /* Header */
 header {
