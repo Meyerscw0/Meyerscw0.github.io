@@ -4,10 +4,27 @@
 /* Default Light Mode Styles */
 body {
     color: #000;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
+}
+
+/* Full Background Div */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* Light background */
+    z-index: -1; /* Keeps it behind the content */
+    transition: background-color 0.3s;
+}
+
+/* Dark Mode Styles for the Background */
+#dark-mode-toggle:checked ~ .background {
+    background-color: #121212; /* Dark background */
 }
 
 /* Dark Mode Styles when Checkbox is Checked */
@@ -20,7 +37,6 @@ body {
 #dark-mode-toggle:checked ~ .glow-container {
     background-color: #121212; /* Ensure the container is dark */
 }
-
 
 /* Header */
 header {
