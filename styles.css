@@ -140,3 +140,46 @@ footer {
         margin-top: 5px;
     }
 }
+/* in styles.css */
+
+/* --- Headshot and Header Updates --- */
+
+.main-header {
+    display: flex; /* Aligns items side-by-side */
+    align-items: center; /* Vertically centers items */
+    justify-content: center; /* Horizontally centers the content block */
+    gap: 2em; /* Adds space between the image and text */
+    text-align: left; /* Aligns the header text to the left */
+    padding: 2em;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image a circle */
+    border: 4px solid white; /* Adds a clean white border */
+    object-fit: cover; /* Prevents the image from being stretched */
+}
+
+/* --- Updates for Responsive Design --- */
+
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column; /* Stacks image on top of text on small screens */
+        text-align: center; /* Centers text below the image on mobile */
+        gap: 1em;
+    }
+
+    .main-header .contact-info {
+        font-size: 0.9rem; /* Slightly smaller text on mobile */
+    }
+
+    /* This targets the existing rule you have */
+    .job h3, .education-entry h3 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+     .job h3 span, .education-entry h3 span {
+        margin-top: 5px;
+    }
+}
